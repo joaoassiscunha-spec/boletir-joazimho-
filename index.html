@@ -1,1 +1,56 @@
-meu boletin 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Deixa o site funcionar bem no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boletim Digital</title>
+  <!-- Liga o HTML ao CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho da página -->
+  <header class="cabecalho">
+    <h1>Boletim Digital</h1>
+    <p class="subtitulo">9º Ano</p>
+  </header>
+
+  <main class="conteudo">
+
+    <!-- Área dos cards de resumo -->
+    <section class="cards-resumo" id="cardsResumo">
+      <!-- Os cards serão criados pelo JavaScript -->
+    </section>
+
+    <!-- Área da tabela de disciplinas -->
+    <section class="tabela-area">
+      <h2>Disciplinas</h2>
+
+      <!-- Tabela responsiva -->
+      <div class="tabela-responsiva">
+        <table>
+          <thead>
+            <tr>
+              <th>Disciplina</th>
+              <th>1º Tri</th>
+              <th>2º Tri</th>
+              <th>3º Tri</th>
+              <th>Média</th>
+              <th>Faltas</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody id="corpoTabela">
+            <!-- As linhas serão criadas pelo JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Liga o HTML ao JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

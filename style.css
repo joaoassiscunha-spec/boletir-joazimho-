@@ -1,0 +1,158 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CORPO DA PÁGINA ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0b1a33; /* azul escuro (cor principal) */
+  color: #e6f0ff;            /* texto claro */
+  line-height: 1.5;
+  padding: 16px;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #4da6ff; /* azul claro (cor secundária) */
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  color: #4da6ff;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #9cc4ff;
+  margin-top: 6px;
+}
+
+/* ===== ÁREA PRINCIPAL ===== */
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== CARDS DE RESUMO (em coluna) ===== */
+.cards-resumo {
+  display: flex;
+  flex-direction: column; /* um embaixo do outro */
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background-color: #12264a;       /* fundo um pouco mais claro */
+  border-left: 6px solid #4da6ff;  /* borda azul claro na lateral */
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card .titulo-card {
+  font-size: 0.9rem;
+  color: #9cc4ff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card .valor-card {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+/* ===== TABELA ===== */
+.tabela-area h2 {
+  font-size: 1.3rem;
+  color: #4da6ff;
+  margin-bottom: 12px;
+}
+
+.tabela-responsiva {
+  width: 100%;
+  overflow-x: auto; /* permite rolar no celular */
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* força rolagem em telas pequenas */
+  background-color: #12264a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #1b3a6b;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+th {
+  color: #4da6ff;
+  font-weight: bold;
+  border-bottom: 2px solid #4da6ff;
+}
+
+td {
+  border-bottom: 1px solid #1b3a6b;
+  color: #e6f0ff;
+}
+
+/* Primeira coluna (nome da disciplina) alinhada à esquerda */
+td:first-child, th:first-child {
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #17305c; /* destaque ao passar o mouse */
+}
+
+/* ===== CORES DAS SITUAÇÕES ===== */
+.situacao-bom {
+  color: #4dff88; /* verde */
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #ffb84d; /* laranja */
+  font-weight: bold;
+}
+
+.situacao-sem-nota {
+  color: #9cc4ff; /* azul claro */
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .card .valor-card {
+    font-size: 1.2rem;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
