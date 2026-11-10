@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,6 +7,8 @@
   <title>Boletim Digital</title>
   <!-- Liga o HTML ao CSS -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js (para os gráficos) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -44,6 +45,31 @@
       <!-- Área dos cards de resumo -->
       <section class="cards-resumo" id="cardsResumo">
         <!-- Os cards serão criados pelo JavaScript -->
+      </section>
+
+      <!-- Área dos gráficos -->
+      <section class="area-graficos" id="areaGraficos">
+        <article class="grafico-card">
+          <h2>Média por disciplina</h2>
+          <div class="grafico-container">
+            <canvas id="graficoMediasDisciplinas"></canvas>
+          </div>
+        </article>
+
+        <article class="grafico-card">
+          <h2>Evolução da média geral</h2>
+          <div class="grafico-container">
+            <canvas id="graficoEvolucaoTrimestres"></canvas>
+          </div>
+        </article>
+
+        <article class="grafico-card" id="cardGraficoFaltas">
+          <h2>Faltas por trimestre</h2>
+          <div id="estadoFaltas"></div>
+          <div class="grafico-container">
+            <canvas id="graficoFaltasTrimestres"></canvas>
+          </div>
+        </article>
       </section>
 
       <!-- Área da tabela de disciplinas -->
